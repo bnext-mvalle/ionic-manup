@@ -1,7 +1,7 @@
 {
-  "name": "ionic-manup",
-  "version": "2.0.0",
-  "description": "Mandatory Update for Ionic 2+ apps",
+  "name": "ionic-manup-no-cache",
+  "version": "1.0.0",
+  "description": "Mandatory Update for Ionic 5 app, no save in cache .JSON",
   "main": "lib/main.js",
   "typings": "lib/main",
   "scripts": {
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/NextFaze/ionic-manup"
+    "url": "https://github.com/bnext-mvalle/ionic-manup"
   },
   "keywords": [
     "ionic",
