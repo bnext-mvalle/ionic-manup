@@ -191,8 +191,17 @@ export class ManUpService {
    */
   public async metadata(): Promise<ManUpData> {
     try {
+      const headerDict = {
+        'Cache-Control': 'no-cache',
+        Pragma: 'no-cache'
+      }
+
+      const requestOptions = {                                                                                                                                                                                 
+        headers: new Headers(headerDict), 
+      };
+      
       const response = await this.http
-        .get(this.config.url)
+        .get(this.config.url, requestOptions)
         .pipe(
           map((response: ManUpData) => {
             if (!response) {
